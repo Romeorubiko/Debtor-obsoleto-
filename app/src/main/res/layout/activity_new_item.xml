@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apk.romero.debtor.ui.NewItem"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/PPbar"
+        android:gravity="center|start"
+        android:weightSum="1"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:id="@+id/bt_mylists_back"
+            android:layout_weight="0.07"
+            android:clickable="false"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="@string/Snewperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="25sp"
+            android:textColor="@color/PaleYellow"
+            android:textStyle="bold"
+            android:layout_weight="0.18"
+            android:layout_marginStart="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.69" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/PaleYellow"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:text="@string/Sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="20"
+            android:id="@+id/tx_name"
+            android:background="@color/Background"
+            android:layout_height="26dp"
+/>
+
+        <TextView
+            android:text="@string/Samount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_amount"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/tx_amount"
+            android:background="@color/Background" />
+
+        <TextView
+            android:text="@string/Sreason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reason"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/tx_reason"
+            android:background="@color/Background" />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start">
+        <RadioButton
+            android:text="@string/Siown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_iown"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/Siownit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2" />
+</RadioGroup>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:text="@string/Screate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_create"
+            android:importantForAccessibility="0"
+            android:background="@color/ColorSecondary" />
+
+    </LinearLayout>
+
+</LinearLayout>

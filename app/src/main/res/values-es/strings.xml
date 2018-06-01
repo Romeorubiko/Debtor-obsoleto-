@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Sdeal">Pago compartido</string>
+    <string name="Smylists">Mis listas</string>
+    <string name="Sexit">Salir</string>
+    <string name="None">desaparecera</string>
+    <string name="Sname">Nombre:</string>
+    <string name="Samount">Cantidad:</string>
+    <string name="Sreason">Razón:</string>
+    <string name="Siown">Yo debo el dinero</string>
+    <string name="Snewperson">Crea una nueva entrada</string>
+    <string name="Siownit">El/ella me debe el dinero</string>
+    <string name="Screate">Crear</string>
+    <string name="Stotal">TOTAL:</string>
+    <string name="Sconfirm">Confirmar</string>
+    <string name="Sall">TODO</string>
+    <string name="iown">Debo</string>
+    <string name="theyown">Me deben</string>
+    <string name="S000">0,00</string>
+    <string name="SErroronfields">Debes rellenar todos los campos. Prueba de nuevo</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Sdeal">Shared Payment</string>
+    <string name="Smylists">My Lists</string>
+    <string name="Sexit">Exit</string>
+    <string name="app_name" translatable="false">Debtor</string>
+    <string name="None">will disapear</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="Sname">Name:</string>
+    <string name="Samount">Amount:</string>
+    <string name="Sreason">Reason:</string>
+    <string name="Siown">I own the money</string>
+    <string name="Snewperson">Create a new entry</string>
+    <string name="Siownit">He/she own the money</string>
+    <string name="Screate">Create</string>
+    <string name="Stotal">TOTAL:</string>
+    <string name="Sconfirm">Confirm</string>
+    <string name="Sall">ALL</string>
+    <string name="iown">I own</string>
+    <string name="theyown">They own</string>
+    <string name="S000">0.00</string>
+    <string name="SErroronfields">You must fill all fields. Try again</string>
+    <string name="Scalculate">Calculate</string>
+    <string name="Smoneypaid">Money paid</string>
+    <string name="Smoneyown">Money own</string>
+</resources>

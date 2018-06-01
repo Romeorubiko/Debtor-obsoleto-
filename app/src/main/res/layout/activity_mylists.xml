@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mylists"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apk.romero.debtor.ui.Mylists"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/PPbar"
+        android:gravity="center|start"
+        android:weightSum="1"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:id="@+id/bt_mylists_back"
+            android:layout_weight="0.07"
+            android:clickable="false"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="@string/Smylists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="25sp"
+            android:textColor="@color/PaleYellow"
+            android:textStyle="bold"
+            android:layout_weight="0.18"
+            android:layout_marginStart="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.69" />
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="50dp"
+                style="@android:style/Widget.TabWidget"
+                android:tabStripLeft="@null"
+                android:tabStripRight="@null"
+                android:orientation="horizontal"
+                android:divider="?android:attr/dividerVertical"
+                android:tabStripEnabled="false"
+  ></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Background">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:id="@+id/bt_add"
+                    android:layout_gravity="bottom|end"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/ColorSecondary"
+                    app:rippleColor="@android:color/darker_gray"
+                    app:srcCompat="@android:drawable/ic_input_add"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recycler_view_iown">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recycler_view_theyown">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
